@@ -26,7 +26,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
-        android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -36,7 +35,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
-        android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -47,7 +45,6 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/userWinTextView"
         app:layout_constraintStart_toEndOf="@+id/cpuWinsTextView" />
@@ -60,7 +57,8 @@
         android:layout_marginStart="8dp"
         android:src="@drawable/ic_rock"
         app:layout_constraintBottom_toTopOf="@+id/cpuWinsTextView"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="onRockClick"/>
 
     <ImageButton
         android:id="@+id/paperButton"
@@ -72,7 +70,8 @@
         android:src="@drawable/ic_paper"
         app:layout_constraintBottom_toTopOf="@+id/tieTextView"
         app:layout_constraintEnd_toStartOf="@+id/scissorButton"
-        app:layout_constraintStart_toEndOf="@+id/rockButton" />
+        app:layout_constraintStart_toEndOf="@+id/rockButton"
+        android:onClick="onPaperClick"/>
 
     <ImageButton
         android:id="@+id/scissorButton"
@@ -82,7 +81,8 @@
         android:layout_marginEnd="8dp"
         android:src="@drawable/ic_scissor"
         app:layout_constraintBottom_toTopOf="@+id/userWinTextView"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        android:onClick="onScissorClick"/>
 
     <ImageView
         android:id="@+id/cpuImageView"
@@ -96,18 +96,6 @@
         app:layout_constraintBottom_toTopOf="@+id/resultTextView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/countdownTextView" />
-
-    <TextView
-        android:id="@+id/countdownTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleTextView" />
 
     <TextView
@@ -117,7 +105,8 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:text="TextView"
+        android:textSize="24sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/paperButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

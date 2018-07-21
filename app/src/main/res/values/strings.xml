@@ -3,4 +3,17 @@
 
     //main activity strings
     <string name="title_string">Rock Paper Scissor</string>
+    <string name="winsBox">Wins: </string>
+    <string name="lossesBox">Losses: </string>
+    <string name="tiesBox">Ties: </string>
+
+    //result strings
+    <string name="winner">Winner!</string>
+    <string name="tie">Tie</string>
+    <string name="loser">Loser</string>
+
+    //shared preferences key names
+    <string name="keyUserWins" translatable="false">user_win</string>
+    <string name="keyCpuWins" translatable="false">cpu_win</string>
+    <string name="keyTie" translatable="false">tie</string>
 </resources>
